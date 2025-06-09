@@ -49,10 +49,10 @@
 
         <!-- Right Side: Form -->
         <div
-          class="col-lg-6 bg-dark p-5 animate__animated animate__fadeInRight"
+          class="col-lg-6 bg-dark p-5 animate__animated animate__flipInY animate__delay-3s"
         >
           <form
-            class="row g-3 needs-validation animate__animated animate__fadeInUp"
+            class="row g-3 needs-validation"
             novalidate
             id="signupForm"
           >
@@ -90,10 +90,9 @@
                 class="form-control bg-dark text-light border-info"
                 id="password"
                 required
-                minlength="8"
               />
               <div class="invalid-feedback">
-                Password must be at least 8 characters.
+                 password must be at least 8 characters long,include at least one letter and number.
               </div>
             </div>
 
@@ -117,12 +116,11 @@
                   type="checkbox"
                   id="terms"
                   required
-                />
+                />&nbsp;&nbsp;
                 <label class="form-check-label" for="terms"
                   >Agree to terms and conditions</label
                 >
                 <div class="invalid-feedback">
-                  You must agree before submitting.
                 </div>
               </div>
             </div>

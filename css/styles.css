@@ -1,20 +1,72 @@
 body {
-  background-color: #121212;
+  background-color: #0f0f0f;
   font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0;
 }
 
-input.form-control:focus {
-  box-shadow: 0 0 10px #0dcaf0;
-  border-color: #0dcaf0;
-  background-color: #1e1e1e;
-  color: #fff;
+/* Sleek Input Styles */
+input.form-control,
+input.form-check-input {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  border: 1px solid #2f2f2f;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
+input.form-control:focus,
+input.form-check-input:focus {
+  background-color: #1c1c1c;
+  border-color: #5eead4;
+  box-shadow: 0 0 12px rgba(94, 234, 212, 0.6);
+  color: #ffffff;
+}
+
+/* Label and Feedback */
+label.form-label,
+label.form-check-label {
+  color: #b0b0b0;
+}
+
+.invalid-feedback {
+  color: #ff4c4c;
+}
+
+/* Modern Button Style */
 button.btn-info {
-  box-shadow: 0 0 15px #0dcaf0;
-  transition: 0.3s;
+  background-color: #5eead4;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 12px;
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.4);
+  transition: all 0.3s ease-in-out;
 }
 
 button.btn-info:hover {
-  box-shadow: 0 0 25px #0dcaf0;
+  background-color: #2dd4bf;
+  box-shadow: 0 0 25px rgba(94, 234, 212, 0.7);
+}
+
+/* Checkbox tweak */
+input.form-check-input {
+  accent-color: #5eead4;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #1e1e1e;
+  border: 1px solid #5eead4;
+  border-radius: 12px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.btn-close-white {
+  filter: brightness(0) invert(1);
 }
